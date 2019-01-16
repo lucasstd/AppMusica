@@ -64,7 +64,7 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.12549019607843137" green="0.047058823529411764" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.25098039215686274" green="0.19607843137254902" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.40000000000000002" green="0.67450980392156867" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="aWX-xH-caS" kind="relationship" relationship="rootViewController" id="3Xj-1v-M2G"/>
@@ -206,7 +206,7 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EHg-Qa-EJC">
                                 <rect key="frame" x="27" y="123" width="322" height="284"/>
-                                <color key="backgroundColor" red="0.2196078431372549" green="0.75294117647058822" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.20392156862745098" green="0.69019607843137254" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="322" id="J8L-Hm-NBg"/>
                                     <constraint firstAttribute="height" constant="284" id="qjs-BW-RXj"/>
@@ -221,14 +221,14 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNe-SY-Aj2">
                                         <rect key="frame" x="0.0" y="0.0" width="55" height="30"/>
-                                        <color key="backgroundColor" red="0.2196078431372549" green="0.75294117647058822" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.97647058823529409" green="0.6470588235294118" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Proxima">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaZ-3L-MnT">
                                         <rect key="frame" x="55" y="0.0" width="55" height="30"/>
-                                        <color key="backgroundColor" red="0.2196078431372549" green="0.75294117647058822" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.97647058823529409" green="0.6470588235294118" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Anterior">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -244,7 +244,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.22352941176470587" green="0.36862745098039218" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.93333333333333335" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="lIf-VV-VA9" firstAttribute="bottom" secondItem="YJZ-Pz-6Xc" secondAttribute="bottom" constant="100" id="40O-ss-OSJ"/>
                             <constraint firstItem="YJZ-Pz-6Xc" firstAttribute="leading" secondItem="lIf-VV-VA9" secondAttribute="leading" constant="132" id="H11-HH-WW6"/>
@@ -287,8 +287,8 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NmR-Fv-Uoy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.25098039215686274" green="0.19607843137254902" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.25490196078431371" green="0.19607843137254902" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.40000000000000002" green="0.67450980392156867" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.40000000000000002" green="0.67450980392156867" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="8dl-pi-fLT" kind="relationship" relationship="viewControllers" id="xE3-Wb-FkX"/>
