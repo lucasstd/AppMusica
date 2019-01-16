@@ -12,8 +12,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var listToPurchase: UITableView!
 
-//    var list = ShoppingList()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,33 +19,28 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //        tableView.delegate = self
     }
     
-    let dogs = ["Pastor Alemão","Pastor Belga","Pastor de Brie",
-                "Pastor dos Pirenéus de Cara Rosa","Pequinês",
-                "Perdigueiro","Pitbull","Podengo","Pointer","Pug"]
-    
   //  override func viewDidLoad() {
    //     super.viewDidLoad()
     //}
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dogs.count
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId")!
-        cell.textLabel?.text = dogs[indexPath.row]
+        // cell.textLabel?.text = 3
         return cell
     }
     
     
     
 }
-
+//
 //extension ViewController: UITableViewDataSource, UITableViewDelegate {
 //    
 //    
 //    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        
 //        return list.items.count
 //    }
 //    
