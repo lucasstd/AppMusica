@@ -186,24 +186,11 @@
         <scene sceneID="ji0-KW-Fdj">
             <objects>
                 <viewController id="IEV-os-tGd" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="j3q-K1-TwL">
+                    <imageView key="view" opaque="NO" userInteractionEnabled="NO" tag="-1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ima3" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="acG-Tl-nqF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dfd-XK-S0a">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
-                        </subviews>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="j2v-4P-2IG" firstAttribute="trailing" secondItem="dfd-XK-S0a" secondAttribute="trailing" id="kdU-6a-lLm"/>
-                            <constraint firstItem="dfd-XK-S0a" firstAttribute="leading" secondItem="j2v-4P-2IG" secondAttribute="leading" id="mZt-n2-W9E"/>
-                            <constraint firstItem="j2v-4P-2IG" firstAttribute="bottom" secondItem="dfd-XK-S0a" secondAttribute="bottom" id="njI-H0-8xY"/>
-                            <constraint firstItem="dfd-XK-S0a" firstAttribute="top" secondItem="j2v-4P-2IG" secondAttribute="top" id="vyg-je-3Nw"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="j2v-4P-2IG"/>
-                    </view>
+                    </imageView>
                     <navigationItem key="navigationItem" title="🤘 Favorites 🤘" id="HdX-w0-X5E"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZKM-VK-Hbe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -363,6 +350,7 @@
     </scenes>
     <resources>
         <image name="challenge" width="37.5" height="37.5"/>
+        <image name="ima3" width="1280" height="720"/>
         <image name="music" width="37.5" height="37.5"/>
         <image name="tips" width="37.5" height="37.5"/>
     </resources>
