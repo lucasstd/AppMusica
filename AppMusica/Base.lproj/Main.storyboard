@@ -35,6 +35,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oS7-Wj-6Es">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.12549019607843137" green="0.047058823529411764" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.25098039215686274" green="0.19607843137254902" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="aWX-xH-caS" kind="relationship" relationship="rootViewController" id="3Xj-1v-M2G"/>
@@ -200,14 +202,65 @@
                     <view key="view" contentMode="scaleToFill" id="70U-nb-bOt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EHg-Qa-EJC">
+                                <rect key="frame" x="27" y="123" width="322" height="284"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.75294117647058822" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="322" id="J8L-Hm-NBg"/>
+                                    <constraint firstAttribute="height" constant="284" id="qjs-BW-RXj"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJZ-Pz-6Xc">
+                                <rect key="frame" x="132" y="488" width="110" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNe-SY-Aj2">
+                                        <rect key="frame" x="0.0" y="0.0" width="55" height="30"/>
+                                        <color key="backgroundColor" red="0.2196078431372549" green="0.75294117647058822" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Proxima">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaZ-3L-MnT">
+                                        <rect key="frame" x="55" y="0.0" width="55" height="30"/>
+                                        <color key="backgroundColor" red="0.2196078431372549" green="0.75294117647058822" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Anterior">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="qaZ-3L-MnT" secondAttribute="trailing" id="56B-P8-nDu"/>
+                                    <constraint firstItem="VNe-SY-Aj2" firstAttribute="top" secondItem="YJZ-Pz-6Xc" secondAttribute="top" id="RHi-Th-H4b"/>
+                                    <constraint firstItem="qaZ-3L-MnT" firstAttribute="top" secondItem="YJZ-Pz-6Xc" secondAttribute="top" id="RPz-zN-UCJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="VNe-SY-Aj2" secondAttribute="bottom" id="ZXd-is-Ne9"/>
+                                    <constraint firstItem="VNe-SY-Aj2" firstAttribute="leading" secondItem="YJZ-Pz-6Xc" secondAttribute="leading" id="kTp-8X-BNp"/>
+                                    <constraint firstAttribute="bottom" secondItem="qaZ-3L-MnT" secondAttribute="bottom" id="lA3-FL-jul"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.22352941176470587" green="0.36862745098039218" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lIf-VV-VA9" firstAttribute="bottom" secondItem="YJZ-Pz-6Xc" secondAttribute="bottom" constant="100" id="40O-ss-OSJ"/>
+                            <constraint firstItem="YJZ-Pz-6Xc" firstAttribute="leading" secondItem="lIf-VV-VA9" secondAttribute="leading" constant="132" id="H11-HH-WW6"/>
+                            <constraint firstItem="YJZ-Pz-6Xc" firstAttribute="top" secondItem="EHg-Qa-EJC" secondAttribute="bottom" constant="81" id="Qex-70-aNZ"/>
+                            <constraint firstItem="lIf-VV-VA9" firstAttribute="trailing" secondItem="YJZ-Pz-6Xc" secondAttribute="trailing" constant="133" id="UjE-XA-OHD"/>
+                            <constraint firstItem="YJZ-Pz-6Xc" firstAttribute="top" secondItem="EHg-Qa-EJC" secondAttribute="bottom" constant="81" id="gm8-KS-MfQ"/>
+                            <constraint firstItem="lIf-VV-VA9" firstAttribute="trailing" secondItem="EHg-Qa-EJC" secondAttribute="trailing" constant="26" id="hyK-Qq-uW3"/>
+                            <constraint firstItem="EHg-Qa-EJC" firstAttribute="leading" secondItem="lIf-VV-VA9" secondAttribute="leading" constant="27" id="iCa-bK-MQj"/>
+                            <constraint firstItem="EHg-Qa-EJC" firstAttribute="top" secondItem="lIf-VV-VA9" secondAttribute="top" constant="59" id="obX-If-Evv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lIf-VV-VA9"/>
                     </view>
                     <navigationItem key="navigationItem" title="Tips" id="Skw-id-hj9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BAf-mV-Oyk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-98" y="934"/>
+            <point key="canvasLocation" x="-98.400000000000006" y="933.28335832083962"/>
         </scene>
         <!--Musics-->
         <scene sceneID="5Bq-8t-vLL">
@@ -233,7 +286,8 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NmR-Fv-Uoy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.25098039215686274" green="0.19607843137254902" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.25490196078431371" green="0.19607843137254902" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="8dl-pi-fLT" kind="relationship" relationship="viewControllers" id="xE3-Wb-FkX"/>
