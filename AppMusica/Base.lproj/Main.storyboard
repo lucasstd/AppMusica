@@ -139,7 +139,7 @@
             </objects>
             <point key="canvasLocation" x="-2204" y="2310"/>
         </scene>
-        <!--Favorites-->
+        <!--🤘 Favorites 🤘-->
         <scene sceneID="ji0-KW-Fdj">
             <objects>
                 <viewController id="IEV-os-tGd" sceneMemberID="viewController">
@@ -161,7 +161,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="j2v-4P-2IG"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Favorites" id="HdX-w0-X5E"/>
+                    <navigationItem key="navigationItem" title="🤘 Favorites 🤘" id="HdX-w0-X5E"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZKM-VK-Hbe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
