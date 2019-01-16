@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U4r-Yw-bHb">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,7 +16,7 @@
                 <navigationController id="U7r-B2-OZ3" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="history" id="GsX-lr-FS3"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mS3-cf-Vti">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.40000000000000002" green="0.67450980390000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
@@ -33,11 +33,11 @@
             <objects>
                 <viewController id="fkX-EH-b2W" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WnY-w9-UHU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="J07-uy-2nZ">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -62,7 +62,7 @@
                 <navigationController id="XBn-LH-kK0" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Tips" image="tips" id="Un7-Yj-yLQ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oS7-Wj-6Es">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.12549019607843137" green="0.047058823529411764" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.40000000000000002" green="0.67450980392156867" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -81,7 +81,7 @@
                 <navigationController id="iQ3-ax-QeB" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Challenges" image="challenge" id="5nG-Sq-Thc"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Jf-4t-qoo">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.40000000000000002" green="0.67450980392156867" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
@@ -98,20 +98,63 @@
             <objects>
                 <viewController id="Hui-SW-MwC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x73-9L-ALY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Iq-Lp-eWC">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="75L-Wl-81Z" customClass="RoundedView" customModule="AppMusica" customModuleProvider="target">
+                                <rect key="frame" x="46" y="124" width="322" height="395"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.69019607839999997" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="395" id="KR5-Yb-96Y"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b26-Hd-cZ0" customClass="RoundedButton" customModule="AppMusica" customModuleProvider="target">
+                                <rect key="frame" x="96" y="683" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.64705882349999999" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Cfp-w2-MO4"/>
+                                </constraints>
+                                <state key="normal" title="Anterior">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUQ-y8-m57" customClass="RoundedButton" customModule="AppMusica" customModuleProvider="target">
+                                <rect key="frame" x="254" y="683" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.64705882349999999" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Proxima">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.92941176469999998" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Iq-Lp-eWC" firstAttribute="leading" secondItem="8yt-jJ-PWe" secondAttribute="leading" id="3Uy-KL-eye"/>
-                            <constraint firstItem="6Iq-Lp-eWC" firstAttribute="top" secondItem="8yt-jJ-PWe" secondAttribute="top" id="exk-PJ-PkW"/>
-                            <constraint firstItem="8yt-jJ-PWe" firstAttribute="trailing" secondItem="6Iq-Lp-eWC" secondAttribute="trailing" id="kCc-10-R9x"/>
-                            <constraint firstItem="8yt-jJ-PWe" firstAttribute="bottom" secondItem="6Iq-Lp-eWC" secondAttribute="bottom" id="nss-OB-Mtr"/>
+                            <constraint firstItem="b26-Hd-cZ0" firstAttribute="leading" secondItem="8yt-jJ-PWe" secondAttribute="leading" constant="96" id="5ig-GH-eRR"/>
+                            <constraint firstItem="8yt-jJ-PWe" firstAttribute="trailing" secondItem="CUQ-y8-m57" secondAttribute="trailing" constant="80" id="8Zu-55-CMz"/>
+                            <constraint firstItem="75L-Wl-81Z" firstAttribute="leading" secondItem="8yt-jJ-PWe" secondAttribute="leading" constant="46" id="Gm6-Ts-S8v"/>
+                            <constraint firstItem="CUQ-y8-m57" firstAttribute="baseline" secondItem="b26-Hd-cZ0" secondAttribute="baseline" id="HES-PP-izB"/>
+                            <constraint firstItem="8yt-jJ-PWe" firstAttribute="bottom" secondItem="b26-Hd-cZ0" secondAttribute="bottom" constant="100" id="Koz-ev-wa0"/>
+                            <constraint firstItem="75L-Wl-81Z" firstAttribute="centerX" secondItem="x73-9L-ALY" secondAttribute="centerX" id="Q7h-S7-Ag1"/>
+                            <constraint firstItem="CUQ-y8-m57" firstAttribute="leading" secondItem="b26-Hd-cZ0" secondAttribute="trailing" constant="78" id="V2M-Fi-ffO"/>
+                            <constraint firstItem="75L-Wl-81Z" firstAttribute="top" secondItem="8yt-jJ-PWe" secondAttribute="top" constant="36" id="cfw-rR-gIp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8yt-jJ-PWe"/>
                     </view>
@@ -119,7 +162,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="84s-ej-32a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-522" y="1635"/>
+            <point key="canvasLocation" x="-523.1884057971015" y="1634.5982142857142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YnN-Zi-cJ5">
@@ -127,7 +170,7 @@
                 <navigationController id="vIC-8z-DZR" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="lv9-gt-z2H"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vKI-01-cXA">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.40000000000000002" green="0.67450980390000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
@@ -144,11 +187,11 @@
             <objects>
                 <viewController id="IEV-os-tGd" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j3q-K1-TwL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dfd-XK-S0a">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -172,11 +215,11 @@
             <objects>
                 <viewController id="igF-mb-170" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rTH-lb-Ntt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lj0-oj-G1A">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -204,11 +247,11 @@
             <objects>
                 <viewController id="aWX-xH-caS" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="70U-nb-bOt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EHg-Qa-EJC" customClass="RoundedView" customModule="AppMusica" customModuleProvider="target">
-                                <rect key="frame" x="27" y="123" width="322" height="284"/>
+                                <rect key="frame" x="27" y="147" width="361" height="284"/>
                                 <color key="backgroundColor" red="0.20392156862745098" green="0.69019607843137254" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="322" id="J8L-Hm-NBg"/>
@@ -225,10 +268,10 @@
                                 </userDefinedRuntimeAttributes>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJZ-Pz-6Xc">
-                                <rect key="frame" x="132" y="488" width="110" height="30"/>
+                                <rect key="frame" x="132" y="512" width="149" height="201"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNe-SY-Aj2" customClass="RoundedButton" customModule="AppMusica" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="55" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNe-SY-Aj2" customClass="RoundedButton" customModule="AppMusica" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="201"/>
                                         <color key="backgroundColor" red="0.97647058823529409" green="0.6470588235294118" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Proxima">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -239,8 +282,8 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaZ-3L-MnT" customClass="RoundedButton" customModule="AppMusica" customModuleProvider="target">
-                                        <rect key="frame" x="55" y="0.0" width="55" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaZ-3L-MnT" customClass="RoundedButton" customModule="AppMusica" customModuleProvider="target">
+                                        <rect key="frame" x="94" y="0.0" width="55" height="201"/>
                                         <color key="backgroundColor" red="0.97647058823529409" green="0.6470588235294118" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Anterior">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -287,7 +330,7 @@
                 <navigationController id="8dl-pi-fLT" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Musics" image="music" selectedImage="music" id="ARS-AY-FBR"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1O7-Zf-d9y">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.40000000000000002" green="0.67450980390000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
