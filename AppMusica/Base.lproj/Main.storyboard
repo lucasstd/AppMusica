@@ -251,11 +251,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EHg-Qa-EJC" customClass="RoundedView" customModule="AppMusica" customModuleProvider="target">
-                                <rect key="frame" x="27" y="147" width="361" height="284"/>
+                                <rect key="frame" x="52" y="145" width="322" height="284"/>
                                 <color key="backgroundColor" red="0.20392156862745098" green="0.69019607843137254" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="322" id="J8L-Hm-NBg"/>
-                                    <constraint firstAttribute="height" constant="284" id="qjs-BW-RXj"/>
+                                    <constraint firstAttribute="height" constant="284" id="yvl-dO-Quz"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -267,54 +266,50 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJZ-Pz-6Xc">
-                                <rect key="frame" x="132" y="512" width="149" height="201"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNe-SY-Aj2" customClass="RoundedButton" customModule="AppMusica" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="94" height="201"/>
-                                        <color key="backgroundColor" red="0.97647058823529409" green="0.6470588235294118" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Proxima">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="15"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaZ-3L-MnT" customClass="RoundedButton" customModule="AppMusica" customModuleProvider="target">
-                                        <rect key="frame" x="94" y="0.0" width="55" height="201"/>
-                                        <color key="backgroundColor" red="0.97647058823529409" green="0.6470588235294118" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Anterior">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="15"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNe-SY-Aj2" customClass="RoundedButton" customModule="AppMusica" customModuleProvider="target">
+                                <rect key="frame" x="286" y="725" width="90" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="qaZ-3L-MnT" secondAttribute="trailing" id="56B-P8-nDu"/>
-                                    <constraint firstItem="VNe-SY-Aj2" firstAttribute="top" secondItem="YJZ-Pz-6Xc" secondAttribute="top" id="RHi-Th-H4b"/>
-                                    <constraint firstItem="qaZ-3L-MnT" firstAttribute="top" secondItem="YJZ-Pz-6Xc" secondAttribute="top" id="RPz-zN-UCJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="VNe-SY-Aj2" secondAttribute="bottom" id="ZXd-is-Ne9"/>
-                                    <constraint firstItem="VNe-SY-Aj2" firstAttribute="leading" secondItem="YJZ-Pz-6Xc" secondAttribute="leading" id="kTp-8X-BNp"/>
-                                    <constraint firstAttribute="bottom" secondItem="qaZ-3L-MnT" secondAttribute="bottom" id="lA3-FL-jul"/>
+                                    <constraint firstAttribute="width" constant="90" id="BLm-c8-wrG"/>
+                                    <constraint firstAttribute="height" constant="50" id="h6z-n8-2SU"/>
                                 </constraints>
-                            </stackView>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaZ-3L-MnT" customClass="RoundedButton" customModule="AppMusica" customModuleProvider="target">
+                                <rect key="frame" x="52" y="725" width="90" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="I4e-u6-iqV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Previous">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95294117647058818" green="0.93333333333333335" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="lIf-VV-VA9" firstAttribute="bottom" secondItem="YJZ-Pz-6Xc" secondAttribute="bottom" constant="100" id="40O-ss-OSJ"/>
-                            <constraint firstItem="YJZ-Pz-6Xc" firstAttribute="leading" secondItem="lIf-VV-VA9" secondAttribute="leading" constant="132" id="H11-HH-WW6"/>
-                            <constraint firstItem="YJZ-Pz-6Xc" firstAttribute="top" secondItem="EHg-Qa-EJC" secondAttribute="bottom" constant="81" id="Qex-70-aNZ"/>
-                            <constraint firstItem="lIf-VV-VA9" firstAttribute="trailing" secondItem="YJZ-Pz-6Xc" secondAttribute="trailing" constant="133" id="UjE-XA-OHD"/>
-                            <constraint firstItem="YJZ-Pz-6Xc" firstAttribute="top" secondItem="EHg-Qa-EJC" secondAttribute="bottom" constant="81" id="gm8-KS-MfQ"/>
-                            <constraint firstItem="lIf-VV-VA9" firstAttribute="trailing" secondItem="EHg-Qa-EJC" secondAttribute="trailing" constant="26" id="hyK-Qq-uW3"/>
-                            <constraint firstItem="EHg-Qa-EJC" firstAttribute="leading" secondItem="lIf-VV-VA9" secondAttribute="leading" constant="27" id="iCa-bK-MQj"/>
-                            <constraint firstItem="EHg-Qa-EJC" firstAttribute="top" secondItem="lIf-VV-VA9" secondAttribute="top" constant="59" id="obX-If-Evv"/>
+                            <constraint firstItem="lIf-VV-VA9" firstAttribute="trailing" secondItem="VNe-SY-Aj2" secondAttribute="trailing" constant="38" id="GwB-6b-sss"/>
+                            <constraint firstItem="EHg-Qa-EJC" firstAttribute="leading" secondItem="lIf-VV-VA9" secondAttribute="leading" constant="52" id="LyZ-Qe-uKb"/>
+                            <constraint firstItem="lIf-VV-VA9" firstAttribute="bottom" secondItem="VNe-SY-Aj2" secondAttribute="bottom" constant="38" id="P0d-yC-Xgg"/>
+                            <constraint firstItem="EHg-Qa-EJC" firstAttribute="top" secondItem="lIf-VV-VA9" secondAttribute="top" constant="57" id="X8e-IZ-gtI"/>
+                            <constraint firstItem="qaZ-3L-MnT" firstAttribute="leading" secondItem="EHg-Qa-EJC" secondAttribute="leading" id="XdJ-I1-WWr"/>
+                            <constraint firstItem="VNe-SY-Aj2" firstAttribute="top" secondItem="qaZ-3L-MnT" secondAttribute="top" id="bIo-UW-TLA"/>
+                            <constraint firstItem="lIf-VV-VA9" firstAttribute="trailing" secondItem="EHg-Qa-EJC" secondAttribute="trailing" constant="40" id="clv-ox-nDi"/>
+                            <constraint firstItem="VNe-SY-Aj2" firstAttribute="baseline" secondItem="qaZ-3L-MnT" secondAttribute="firstBaseline" id="suC-r3-D8v"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lIf-VV-VA9"/>
                     </view>
@@ -322,7 +317,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BAf-mV-Oyk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-98.400000000000006" y="933.28335832083962"/>
+            <point key="canvasLocation" x="-98.550724637681171" y="932.8125"/>
         </scene>
         <!--Musics-->
         <scene sceneID="5Bq-8t-vLL">
