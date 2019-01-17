@@ -49,7 +49,9 @@ final class SongsViewController: UIViewController, UITableViewDelegate, UITableV
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
 
-        cell.textLabel?.text = musics[indexPath.row].musicName
+        let musicRow = musics[indexPath.row]
+        cell.textLabel?.textColor = .red
+        cell.textLabel?.text = musicRow.bandName + " - " + musicRow.musicName
         return cell
     }
     
