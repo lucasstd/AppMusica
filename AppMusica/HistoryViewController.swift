@@ -33,7 +33,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
-        // cell.textLabel?.text = 3
+        cell.textLabel?.text = didPlayed[indexPath.row].bandName + " - " + didPlayed[indexPath.row].musicName
         return cell
     }
     

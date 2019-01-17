@@ -28,7 +28,7 @@ struct AllMusics {
             BPM:3,
             difficulty:1,
             isFavorite:false,
-            didPlayed:false,
+            didPlayed:true,
             chords:["A","B","F"],
             tab:["She. She screams in silence. A sullen riot. Penetrating through her mind"]
         ),
@@ -37,7 +37,7 @@ struct AllMusics {
             bandName:"Jack Johnson",
             BPM:3,
             difficulty:1,
-            isFavorite:false,
+            isFavorite:true,
             didPlayed:false,
             chords:["Dm","F","Bb","C"],
             tab:["She. She screams in silence. A sullen riot. Penetrating through her mind"]
