@@ -220,10 +220,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lj0-oj-G1A">
-                                <rect key="frame" x="0.0" y="237" width="414" height="503"/>
+                                <rect key="frame" x="0.0" y="237" width="414" height="576"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="503" id="5ke-K1-oQd"/>
+                                    <constraint firstAttribute="height" constant="576" id="5ke-K1-oQd"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="P8v-oB-8lj">
@@ -292,7 +292,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Cuh-Fh-IeA" firstAttribute="bottom" secondItem="lj0-oj-G1A" secondAttribute="bottom" constant="73" id="7k4-4h-LGV"/>
+                            <constraint firstItem="Cuh-Fh-IeA" firstAttribute="bottom" secondItem="lj0-oj-G1A" secondAttribute="bottom" id="7k4-4h-LGV"/>
                             <constraint firstItem="iBx-rZ-C7X" firstAttribute="firstBaseline" secondItem="cyx-I3-4sb" secondAttribute="baseline" id="8Kd-bA-Pfh"/>
                             <constraint firstItem="lj0-oj-G1A" firstAttribute="centerX" secondItem="XUu-a0-OTc" secondAttribute="centerX" id="Fs0-z8-IIT"/>
                             <constraint firstItem="iBx-rZ-C7X" firstAttribute="leading" secondItem="cyx-I3-4sb" secondAttribute="trailing" constant="52" id="GBC-iL-Mgj"/>
