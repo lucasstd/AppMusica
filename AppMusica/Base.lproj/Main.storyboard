@@ -338,7 +338,7 @@
                     <navigationItem key="navigationItem" title="Songs" id="uhl-CA-tFZ"/>
                     <connections>
                         <outlet property="songsTableView" destination="lj0-oj-G1A" id="Tos-SB-omP"/>
-                        <segue destination="2Wz-VT-iaE" kind="show" id="hmi-GQ-Bzg"/>
+                        <segue destination="2Wz-VT-iaE" kind="show" identifier="songInfo" id="hmi-GQ-Bzg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yff-wZ-L9B" userLabel="First Responder" sceneMemberID="firstResponder"/>

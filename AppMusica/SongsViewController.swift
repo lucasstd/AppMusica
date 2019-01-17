@@ -55,7 +55,7 @@ final class SongsViewController: UIViewController, UITableViewDelegate, UITableV
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        performSegue(withIdentifier: String, sender: <#T##Any?#>)
+        performSegue(withIdentifier: "songInfo", sender: nil)
     }
     
     
