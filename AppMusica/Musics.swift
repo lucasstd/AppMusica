@@ -13,8 +13,8 @@ struct Musics {
     let bandName:   String
     let BPM:        Int
     let difficulty: Int
-    var isFavorite: Bool
-    var didPlayed:  Bool
+    var isFavorite: Bool = false
+    var didPlayed:  Bool = false
     var chords:     [String]
     var tab:        [String]
 }

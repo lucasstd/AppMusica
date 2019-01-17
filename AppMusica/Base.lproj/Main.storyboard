@@ -220,7 +220,7 @@
         <!--Songs-->
         <scene sceneID="KHJ-zN-n9X">
             <objects>
-                <viewController id="igF-mb-170" sceneMemberID="viewController">
+                <viewController id="igF-mb-170" customClass="SongsViewController" customModule="AppMusica" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rTH-lb-Ntt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -320,6 +320,9 @@
                         <viewLayoutGuide key="safeArea" id="Cuh-Fh-IeA"/>
                     </view>
                     <navigationItem key="navigationItem" title="Songs" id="uhl-CA-tFZ"/>
+                    <connections>
+                        <outlet property="songsTableView" destination="lj0-oj-G1A" id="Tos-SB-omP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yff-wZ-L9B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

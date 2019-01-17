@@ -10,19 +10,46 @@ import UIKit
 
 final class SongsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
    
+    @IBOutlet weak var songsTableView: UITableView!
     
+    var musics = [
+        Musics(
+            musicName:"She",
+            bandName:"Green Day",
+            BPM:3,
+            difficulty:1,
+            isFavorite:false,
+            didPlayed:false,
+            chords:["A","B","F"],
+            tab:["She. She screams in silence. A sullen riot. Penetrating through her mind"]
+        ),
+        Musics(
+            musicName:"Flake",
+            bandName:"Jack Johnson",
+            BPM:3,
+            difficulty:1,
+            isFavorite:false,
+            didPlayed:false,
+            chords:["Dm","F","Bb","C"],
+            tab:["She. She screams in silence. A sullen riot. Penetrating through her mind"]
+        )
+    ]
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        songsTableView.dataSource = self
+        songsTableView.delegate = self
         
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return musics.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
-        // cell.textLabel?.text = 3
+
+        cell.textLabel?.text = musics[indexPath.row].musicName
         return cell
     }
     
