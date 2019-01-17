@@ -54,6 +54,9 @@ final class SongsViewController: UIViewController, UITableViewDelegate, UITableV
         cell.textLabel?.text = musicRow.bandName + " - " + musicRow.musicName
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        performSegue(withIdentifier: String, sender: <#T##Any?#>)
+    }
     
     
 }
