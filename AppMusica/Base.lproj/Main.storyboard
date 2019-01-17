@@ -191,7 +191,7 @@
         <!--🤘 Favorites 🤘-->
         <scene sceneID="ji0-KW-Fdj">
             <objects>
-                <viewController id="IEV-os-tGd" sceneMemberID="viewController">
+                <viewController id="IEV-os-tGd" customClass="FavoritesViewController" customModule="AppMusica" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lL3-n2-bz1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -208,6 +208,10 @@
                         </prototypes>
                     </tableView>
                     <navigationItem key="navigationItem" title="🤘 Favorites 🤘" id="HdX-w0-X5E"/>
+                    <connections>
+                        <outlet property="favTableView" destination="lL3-n2-bz1" id="Trr-ks-tXj"/>
+                        <outlet property="favoriteTableView" destination="lL3-n2-bz1" id="ZYm-Nf-72B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZKM-VK-Hbe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
