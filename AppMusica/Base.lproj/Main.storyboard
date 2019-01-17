@@ -231,7 +231,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lj0-oj-G1A">
-                                <rect key="frame" x="0.0" y="237" width="414" height="576"/>
+                                <rect key="frame" x="0.0" y="237.33333333333331" width="414" height="575.66666666666674"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="P8v-oB-8lj">
@@ -249,77 +249,82 @@
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medium" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUu-a0-OTc">
-                                <rect key="frame" x="124" y="152" width="166" height="21"/>
+                                <rect key="frame" x="124" y="152" width="166" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XuA-uz-eRW" customClass="RoundedButton" customModule="AppMusica" customModuleProvider="target">
-                                <rect key="frame" x="20" y="179" width="90" height="50"/>
-                                <color key="backgroundColor" red="0.97647058819999999" green="0.64705882349999999" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="TI5-EQ-aQ2"/>
-                                    <constraint firstAttribute="width" constant="90" id="eCU-gA-7FS"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Easy">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyx-I3-4sb" customClass="RoundedButton" customModule="AppMusica" customModuleProvider="target">
-                                <rect key="frame" x="162" y="179" width="90" height="50"/>
-                                <color key="backgroundColor" red="0.97647058819999999" green="0.64705882349999999" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Medium">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBx-rZ-C7X" customClass="RoundedButton" customModule="AppMusica" customModuleProvider="target">
-                                <rect key="frame" x="304" y="179" width="90" height="50"/>
-                                <color key="backgroundColor" red="0.97647058819999999" green="0.64705882349999999" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Hard">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="BDj-2F-xN8">
+                                <rect key="frame" x="20" y="179" width="374" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XuA-uz-eRW" customClass="RoundedButton" customModule="AppMusica" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="50"/>
+                                        <color key="backgroundColor" red="0.97647058819999999" green="0.64705882349999999" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="6Ah-td-ZdS"/>
+                                            <constraint firstAttribute="width" constant="90" id="arW-0M-GSF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Easy">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyx-I3-4sb" customClass="RoundedButton" customModule="AppMusica" customModuleProvider="target">
+                                        <rect key="frame" x="142" y="0.0" width="90" height="50"/>
+                                        <color key="backgroundColor" red="0.97647058819999999" green="0.64705882349999999" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="CH7-c1-tYt"/>
+                                            <constraint firstAttribute="width" constant="90" id="nl6-Ns-n3Y"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Medium">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBx-rZ-C7X" customClass="RoundedButton" customModule="AppMusica" customModuleProvider="target">
+                                        <rect key="frame" x="284" y="0.0" width="90" height="50"/>
+                                        <color key="backgroundColor" red="0.97647058819999999" green="0.64705882349999999" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="BKz-wM-U6h"/>
+                                            <constraint firstAttribute="width" constant="90" id="uSm-ER-wrW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Hard">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="cyx-I3-4sb" firstAttribute="baseline" secondItem="iBx-rZ-C7X" secondAttribute="firstBaseline" id="2U9-2p-QOD"/>
-                            <constraint firstItem="j52-tz-GWu" firstAttribute="leading" secondItem="lj0-oj-G1A" secondAttribute="leading" id="69l-pZ-87C"/>
-                            <constraint firstItem="XuA-uz-eRW" firstAttribute="top" secondItem="cyx-I3-4sb" secondAttribute="top" id="GZx-eY-uhb"/>
-                            <constraint firstItem="j52-tz-GWu" firstAttribute="top" secondItem="Cuh-Fh-IeA" secondAttribute="top" id="OgE-xA-Xe9"/>
-                            <constraint firstItem="lj0-oj-G1A" firstAttribute="bottom" secondItem="Cuh-Fh-IeA" secondAttribute="bottom" id="QkG-tP-mB3"/>
-                            <constraint firstItem="XUu-a0-OTc" firstAttribute="top" secondItem="j52-tz-GWu" secondAttribute="bottom" constant="8" id="TlK-Yh-ofc"/>
-                            <constraint firstItem="cyx-I3-4sb" firstAttribute="leading" secondItem="XuA-uz-eRW" secondAttribute="trailing" constant="52" id="WUK-yQ-KUC"/>
-                            <constraint firstItem="XUu-a0-OTc" firstAttribute="centerX" secondItem="cyx-I3-4sb" secondAttribute="centerX" id="cYY-0q-419"/>
-                            <constraint firstItem="j52-tz-GWu" firstAttribute="trailing" secondItem="lj0-oj-G1A" secondAttribute="trailing" id="deD-VD-xam"/>
-                            <constraint firstItem="j52-tz-GWu" firstAttribute="leading" secondItem="rTH-lb-Ntt" secondAttribute="leading" id="e8c-2I-Xig"/>
-                            <constraint firstItem="XUu-a0-OTc" firstAttribute="leading" secondItem="Cuh-Fh-IeA" secondAttribute="leading" constant="124" id="g0Q-dR-VXc"/>
-                            <constraint firstItem="XuA-uz-eRW" firstAttribute="leading" secondItem="rTH-lb-Ntt" secondAttribute="leadingMargin" id="jzg-dg-t55"/>
-                            <constraint firstItem="XuA-uz-eRW" firstAttribute="baseline" secondItem="cyx-I3-4sb" secondAttribute="firstBaseline" id="ldU-Kd-0RS"/>
-                            <constraint firstItem="cyx-I3-4sb" firstAttribute="top" secondItem="iBx-rZ-C7X" secondAttribute="top" id="lka-ca-ojJ"/>
-                            <constraint firstItem="lj0-oj-G1A" firstAttribute="top" secondItem="XuA-uz-eRW" secondAttribute="bottom" constant="8" symbolic="YES" id="nUG-hy-8rT"/>
-                            <constraint firstItem="cyx-I3-4sb" firstAttribute="top" secondItem="XUu-a0-OTc" secondAttribute="bottom" constant="6" id="q8p-94-ugc"/>
-                            <constraint firstItem="iBx-rZ-C7X" firstAttribute="trailing" secondItem="rTH-lb-Ntt" secondAttribute="trailingMargin" id="tki-G8-nzT"/>
-                            <constraint firstItem="iBx-rZ-C7X" firstAttribute="leading" secondItem="cyx-I3-4sb" secondAttribute="trailing" constant="52" id="uYu-PR-TDj"/>
-                            <constraint firstItem="j52-tz-GWu" firstAttribute="centerX" secondItem="XUu-a0-OTc" secondAttribute="centerX" id="xoi-Ba-Frv"/>
-                            <constraint firstAttribute="trailing" secondItem="j52-tz-GWu" secondAttribute="trailing" id="zIp-zf-Nb6"/>
+                            <constraint firstItem="j52-tz-GWu" firstAttribute="centerX" secondItem="XUu-a0-OTc" secondAttribute="centerX" id="2yk-xi-Wy0"/>
+                            <constraint firstItem="j52-tz-GWu" firstAttribute="top" secondItem="Cuh-Fh-IeA" secondAttribute="top" id="6RR-JZ-wKP"/>
+                            <constraint firstItem="lj0-oj-G1A" firstAttribute="top" secondItem="BDj-2F-xN8" secondAttribute="bottom" constant="8" symbolic="YES" id="9vA-EF-edd"/>
+                            <constraint firstItem="j52-tz-GWu" firstAttribute="trailing" secondItem="lj0-oj-G1A" secondAttribute="trailing" id="B5E-P9-6Uq"/>
+                            <constraint firstItem="BDj-2F-xN8" firstAttribute="centerX" secondItem="XUu-a0-OTc" secondAttribute="centerX" id="Q3d-ar-WcI"/>
+                            <constraint firstItem="XUu-a0-OTc" firstAttribute="leading" secondItem="Cuh-Fh-IeA" secondAttribute="leading" constant="124" id="WDX-nd-7ch"/>
+                            <constraint firstAttribute="trailing" secondItem="j52-tz-GWu" secondAttribute="trailing" id="XMp-hW-roH"/>
+                            <constraint firstItem="j52-tz-GWu" firstAttribute="leading" secondItem="lj0-oj-G1A" secondAttribute="leading" id="ZDX-PL-UxV"/>
+                            <constraint firstItem="lj0-oj-G1A" firstAttribute="bottom" secondItem="Cuh-Fh-IeA" secondAttribute="bottom" id="bF5-pZ-HDW"/>
+                            <constraint firstItem="BDj-2F-xN8" firstAttribute="top" secondItem="XUu-a0-OTc" secondAttribute="bottom" constant="7" id="foi-BF-0ng"/>
+                            <constraint firstItem="j52-tz-GWu" firstAttribute="leading" secondItem="rTH-lb-Ntt" secondAttribute="leading" id="gEl-NR-dIk"/>
+                            <constraint firstItem="XUu-a0-OTc" firstAttribute="top" secondItem="j52-tz-GWu" secondAttribute="bottom" constant="8" id="iBC-E7-Aqx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Cuh-Fh-IeA"/>
                     </view>
@@ -331,7 +336,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yff-wZ-L9B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-167" y="-458"/>
+            <point key="canvasLocation" x="-168.11594202898553" y="-458.03571428571428"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="MNS-Xt-sli">
@@ -554,6 +559,6 @@
         <image name="tips" width="37.5" height="37.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="MYl-sw-sNv"/>
+        <segue reference="hmi-GQ-Bzg"/>
     </inferredMetricsTieBreakers>
 </document>
