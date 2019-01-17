@@ -31,7 +31,7 @@
         <!--History-->
         <scene sceneID="jWd-kr-Sb1">
             <objects>
-                <viewController id="fkX-EH-b2W" sceneMemberID="viewController">
+                <viewController id="fkX-EH-b2W" customClass="HistoryViewController" customModule="AppMusica" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WnY-w9-UHU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,10 +61,14 @@
                         <viewLayoutGuide key="safeArea" id="CwV-Ug-jEn"/>
                     </view>
                     <navigationItem key="navigationItem" title="History" id="v4v-ea-Hr2"/>
+                    <connections>
+                        <outlet property="tableView" destination="J07-uy-2nZ" id="JHM-S7-ePL"/>
+                        <segue destination="2Wz-VT-iaE" kind="show" identifier="historyInfo" id="MYl-sw-sNv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nz7-Fk-F7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-215" y="251"/>
+            <point key="canvasLocation" x="-99" y="252"/>
         </scene>
         <!--Tips-->
         <scene sceneID="Xif-xO-faL">
@@ -188,7 +192,7 @@
             </objects>
             <point key="canvasLocation" x="-2204" y="2310"/>
         </scene>
-        <!--🤘 Favorites 🤘-->
+        <!--🤘 Favorites-->
         <scene sceneID="ji0-KW-Fdj">
             <objects>
                 <viewController id="IEV-os-tGd" customClass="FavoritesViewController" customModule="AppMusica" customModuleProvider="target" sceneMemberID="viewController">
@@ -203,36 +207,20 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="usn-sl-XQI" id="Zja-Cp-FNI" customClass="ListMusicTableViewCell" customModule="AppMusica" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="64.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ima7" translatesAutoresizingMaskIntoConstraints="NO" id="tgJ-Fs-l8A">
-                                            <rect key="frame" x="2" y="-2" width="93" height="68"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGu-LB-L3w">
-                                            <rect key="frame" x="103" y="2" width="308" height="27"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ce3-fn-6Qa">
-                                            <rect key="frame" x="103" y="5" width="308" height="49"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </stackView>
-                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" title="🤘 Favorites 🤘" id="HdX-w0-X5E"/>
+                    <navigationItem key="navigationItem" title="🤘 Favorites" id="HdX-w0-X5E"/>
                     <connections>
                         <outlet property="favTableView" destination="lL3-n2-bz1" id="Trr-ks-tXj"/>
-                        <outlet property="favoriteTableView" destination="lL3-n2-bz1" id="ZYm-Nf-72B"/>
+                        <outlet property="favoriteTableView" destination="lL3-n2-bz1" id="ubZ-jd-fXz"/>
+                        <segue destination="2Wz-VT-iaE" kind="show" identifier="favoriteInfo" id="uPj-kN-qlj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZKM-VK-Hbe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1410.144927536232" y="2309.5982142857142"/>
+            <point key="canvasLocation" x="-265" y="2310"/>
         </scene>
         <!--Songs-->
         <scene sceneID="KHJ-zN-n9X">
@@ -593,8 +581,10 @@
     </scenes>
     <resources>
         <image name="challenge" width="37.5" height="37.5"/>
-        <image name="ima7" width="1920" height="1080"/>
         <image name="music" width="37.5" height="37.5"/>
         <image name="tips" width="37.5" height="37.5"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="MYl-sw-sNv"/>
+    </inferredMetricsTieBreakers>
 </document>

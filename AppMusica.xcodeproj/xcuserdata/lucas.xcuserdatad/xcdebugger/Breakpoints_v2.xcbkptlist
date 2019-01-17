@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AppMusica/SongsViewController.swift"
-            timestampString = "569442332.430606"
+            timestampString = "569444471.398159"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53">
+            startingLineNumber = "43"
+            endingLineNumber = "43">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

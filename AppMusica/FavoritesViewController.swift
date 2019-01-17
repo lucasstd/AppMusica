@@ -11,6 +11,8 @@ import UIKit
 final class FavoritesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
+    @IBOutlet var favoriteTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,5 +28,8 @@ final class FavoritesViewController: UIViewController, UITableViewDelegate, UITa
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "favoriteInfo", sender: nil)
+    }
     
 }
