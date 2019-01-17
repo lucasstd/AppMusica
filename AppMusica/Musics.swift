@@ -18,3 +18,29 @@ struct Musics {
     var chords:     [String]
     var tab:        [String]
 }
+
+
+struct AllMusics {
+    var musicsList = [
+        Musics(
+            musicName:"She",
+            bandName:"Green Day",
+            BPM:3,
+            difficulty:1,
+            isFavorite:false,
+            didPlayed:false,
+            chords:["A","B","F"],
+            tab:["She. She screams in silence. A sullen riot. Penetrating through her mind"]
+        ),
+        Musics(
+            musicName:"Flake",
+            bandName:"Jack Johnson",
+            BPM:3,
+            difficulty:1,
+            isFavorite:false,
+            didPlayed:false,
+            chords:["Dm","F","Bb","C"],
+            tab:["She. She screams in silence. A sullen riot. Penetrating through her mind"]
+        )
+    ]
+}
