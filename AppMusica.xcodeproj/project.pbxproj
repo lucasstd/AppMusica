@@ -10,6 +10,7 @@
 		27F5CDD321F0E28C003C9894 /* ListMusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5CDD221F0E28C003C9894 /* ListMusicTableViewCell.swift */; };
 		2F0B9D1921EFA7CE002D2A90 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0B9D1821EFA7CE002D2A90 /* RoundedButton.swift */; };
 		2F0B9D1B21EFA829002D2A90 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0B9D1A21EFA829002D2A90 /* RoundedView.swift */; };
+		A042C3FD21F1152100F8A6F0 /* MusicInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A042C3FC21F1152100F8A6F0 /* MusicInfo.swift */; };
 		A06B0DD321EE573E00A2964F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06B0DD221EE573E00A2964F /* AppDelegate.swift */; };
 		A06B0DD521EE573E00A2964F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06B0DD421EE573E00A2964F /* ViewController.swift */; };
 		A06B0DD821EE573E00A2964F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06B0DD621EE573E00A2964F /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		27F5CDD221F0E28C003C9894 /* ListMusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMusicTableViewCell.swift; sourceTree = "<group>"; };
 		2F0B9D1821EFA7CE002D2A90 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		2F0B9D1A21EFA829002D2A90 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		A042C3FC21F1152100F8A6F0 /* MusicInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicInfo.swift; sourceTree = "<group>"; };
 		A06B0DCF21EE573E00A2964F /* AppMusica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppMusica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06B0DD221EE573E00A2964F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A06B0DD421EE573E00A2964F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				27F5CDD221F0E28C003C9894 /* ListMusicTableViewCell.swift */,
 				A06B0DF021F0D5AC00A2964F /* SongsViewController.swift */,
 				2F0B9D1821EFA7CE002D2A90 /* RoundedButton.swift */,
+				A042C3FC21F1152100F8A6F0 /* MusicInfo.swift */,
 				A06B0DEC21EFBB6400A2964F /* FavoritesViewController.swift */,
 				A06B0DEE21EFBB7E00A2964F /* HistoryViewController.swift */,
 				2F0B9D1A21EFA829002D2A90 /* RoundedView.swift */,
@@ -159,6 +162,7 @@
 				2F0B9D1B21EFA829002D2A90 /* RoundedView.swift in Sources */,
 				A06B0DD521EE573E00A2964F /* ViewController.swift in Sources */,
 				2F0B9D1921EFA7CE002D2A90 /* RoundedButton.swift in Sources */,
+				A042C3FD21F1152100F8A6F0 /* MusicInfo.swift in Sources */,
 				27F5CDD321F0E28C003C9894 /* ListMusicTableViewCell.swift in Sources */,
 				A06B0DD321EE573E00A2964F /* AppDelegate.swift in Sources */,
 				A06B0DED21EFBB6400A2964F /* FavoritesViewController.swift in Sources */,

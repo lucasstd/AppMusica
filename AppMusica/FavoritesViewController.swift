@@ -14,7 +14,7 @@ final class FavoritesViewController: UIViewController, UITableViewDelegate, UITa
     @IBOutlet var favoriteTableView: UITableView!
     
     let allMusics = AllMusics().musicsList
-    var didPlayed: [Musics] = []
+    var allFavorites: [Musics] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,23 +23,26 @@ final class FavoritesViewController: UIViewController, UITableViewDelegate, UITa
         favoriteTableView.delegate = self
         
         for music in allMusics {
-            if music.didPlayed {
-                didPlayed.append(music)
+            if music.isFavorite {
+                allFavorites.append(music)
             }
         }
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return didPlayed.count
+        return allFavorites.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = favoriteTableView.dequeueReusableCell(withIdentifier: "cell")!
-        cell.textLabel?.text = didPlayed[indexPath.row].bandName + " - " + didPlayed[indexPath.row].musicName
+        cell.textLabel?.text = allFavorites[indexPath.row].bandName + " - " + allFavorites[indexPath.row].musicName
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "historyInfo", sender: nil)
+        performSegue(withIdentifier: "favoriteInfo", sender: nil)
     }
-    
+//    override func prepare(for segue: favoriteInfo, sender: Any?) {
+//        let name = segue.destination as! YourViewController
+//        name = "Your Data"
+//    }
 }
