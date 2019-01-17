@@ -41,6 +41,16 @@ struct AllMusics {
             didPlayed:false,
             chords:["Dm","F","Bb","C"],
             tab:["She. She screams in silence. A sullen riot. Penetrating through her mind"]
+        ),
+        Musics(
+            musicName:"Flake",
+            bandName:"Jack Johnson",
+            BPM:3,
+            difficulty:1,
+            isFavorite:true,
+            didPlayed:false,
+            chords:["Dm","F","Bb","C"],
+            tab:["She. She screams in silence. A sullen riot. Penetrating through her mind"]
         )
     ]
 }
