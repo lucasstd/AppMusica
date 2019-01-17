@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27F5CDD321F0E28C003C9894 /* ListMusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5CDD221F0E28C003C9894 /* ListMusicTableViewCell.swift */; };
 		2F0B9D1921EFA7CE002D2A90 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0B9D1821EFA7CE002D2A90 /* RoundedButton.swift */; };
 		2F0B9D1B21EFA829002D2A90 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0B9D1A21EFA829002D2A90 /* RoundedView.swift */; };
 		A06B0DD321EE573E00A2964F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06B0DD221EE573E00A2964F /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27F5CDD221F0E28C003C9894 /* ListMusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMusicTableViewCell.swift; sourceTree = "<group>"; };
 		2F0B9D1821EFA7CE002D2A90 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		2F0B9D1A21EFA829002D2A90 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		A06B0DCF21EE573E00A2964F /* AppMusica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppMusica.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,7 @@
 				A06B0DD221EE573E00A2964F /* AppDelegate.swift */,
 				A06B0DD421EE573E00A2964F /* ViewController.swift */,
 				A06B0DD621EE573E00A2964F /* Main.storyboard */,
+				27F5CDD221F0E28C003C9894 /* ListMusicTableViewCell.swift */,
 				A06B0DF021F0D5AC00A2964F /* SongsViewController.swift */,
 				2F0B9D1821EFA7CE002D2A90 /* RoundedButton.swift */,
 				A06B0DEC21EFBB6400A2964F /* FavoritesViewController.swift */,
@@ -156,6 +159,7 @@
 				2F0B9D1B21EFA829002D2A90 /* RoundedView.swift in Sources */,
 				A06B0DD521EE573E00A2964F /* ViewController.swift in Sources */,
 				2F0B9D1921EFA7CE002D2A90 /* RoundedButton.swift in Sources */,
+				27F5CDD321F0E28C003C9894 /* ListMusicTableViewCell.swift in Sources */,
 				A06B0DD321EE573E00A2964F /* AppDelegate.swift in Sources */,
 				A06B0DED21EFBB6400A2964F /* FavoritesViewController.swift in Sources */,
 				A06B0DF121F0D5AC00A2964F /* SongsViewController.swift in Sources */,
