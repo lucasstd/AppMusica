@@ -214,7 +214,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="🤘 Favorites" id="HdX-w0-X5E"/>
                     <connections>
-                        <outlet property="favTableView" destination="lL3-n2-bz1" id="Trr-ks-tXj"/>
                         <outlet property="favoriteTableView" destination="lL3-n2-bz1" id="ubZ-jd-fXz"/>
                         <segue destination="2Wz-VT-iaE" kind="show" identifier="favoriteInfo" id="uPj-kN-qlj"/>
                     </connections>
